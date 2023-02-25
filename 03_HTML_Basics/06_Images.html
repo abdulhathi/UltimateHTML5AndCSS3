@@ -1,0 +1,28 @@
+<!-- 
+    NOTE: Download sample images go to https://www.unsplash.com
+    1. Image element with alt attribute
+    2. Image element Hight, Weight pixcel
+    3. Image element and its object-fit CSS property "cover" to crop and position the image
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics - Images</title>
+    <style>
+        img {
+            height: 500px;
+            width: 500px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <img src="images/coffee.jpg" alt="Abdul Hathi person photo">
+    <!-- If the image path is invalid it shows the alt values -->
+    <img src="images/Profile_Photo_.jpeg" alt="Abdul Hathi person photo">
+</body>
+</html>

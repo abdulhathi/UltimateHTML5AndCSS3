@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics - Audio</title>
+</head>
+<body>
+    <!-- 
+        1. Play the audio using the <audio> element
+        2. Play the audio using audio element and its controls
+        3. Increase/Reduce the volume by using javascript 
+     -->
+     <audio id="audioPlayer" controls autoplay loop src="audios/001.mp3"></audio>
+     <script>
+        const audioPlayer = document.getElementById("audioPlayer")
+        audioPlayer.volume = 0.1
+    </script>
+</body>
+</html>
