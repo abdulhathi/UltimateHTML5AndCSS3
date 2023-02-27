@@ -1,0 +1,44 @@
+<!-- 
+    @media quries is used for different devices to show the responsive page.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Media quries</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+        .box {
+            background-color: gold;
+        }
+        .box:nth-of-type(2) {
+            background-color: dodgerblue;
+        }
+        @media screen and (min-width: 900px) {
+            .container {
+                flex-direction: row;
+            }
+        }
+        @media screen and (min-width: 1000px) {
+            .box {
+                font-weight: bold;
+            }
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="box">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet voluptates hic at doloribus labore possimus in eligendi voluptatum voluptatibus magnam.</p>
+        </div>
+        <div class="box">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis obcaecati explicabo dicta et incidunt ipsa voluptatum ratione corrupti autem. Nisi!</p>
+        </div>
+    </div>
+ </body>
+ </html>

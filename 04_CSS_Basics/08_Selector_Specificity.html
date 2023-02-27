@@ -1,0 +1,47 @@
+<!-- 
+    Selector specificity order
+    1. ID selector  - (1,0,0)
+    2. Class selector - (0,1,0)
+    3. Type selector - (0,0,1)
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics - Selector specificity</title>
+    <style>
+        body {
+            font-size: 25px;
+        }
+        section {
+            background-color: aqua;
+        }
+        .sectionStyle {
+            background-color:blueviolet;
+            color: white;
+        }
+        #section1 {
+            background-color: crimson;
+        }
+        article {
+            font-weight: bold !important;
+        }
+        #section2 {
+            font-weight: normal;
+            font-style: italic;
+        }
+        
+    </style>
+ </head>
+ <body>
+    <section class="sectionStyle" id="section1">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere, ut sed cupiditate vero dicta quia dignissimos. Nulla architecto, est repellat sit quae aspernatur molestiae beatae! Labore facilis omnis harum commodi.
+    </section>
+    <p></p>
+    <article id="section2" class="section2Style">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellat, recusandae? Beatae dolore neque atque in et error incidunt, iste similique.
+    </article>
+ </body>
+ </html>

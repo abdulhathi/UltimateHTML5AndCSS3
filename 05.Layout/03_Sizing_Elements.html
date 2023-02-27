@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Sizing Elements</title>
+    <style>
+        /* Universal selector */
+        /* box-sizing: border-box */
+        /* Universal box sizing property for sudo element */
+        *, *::after, *::before {
+            box-sizing: border-box;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: gold;
+            padding: 20px;
+        }
+        .box::after {
+            content: "Hello";
+        }
+        .boxSpan {
+            width: 200px;
+            height: 200px;
+            background-color: greenyellow;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>box sizing for the block level div element</h1>
+    <div class="box"></div>
+    <h1>box sizing for the inline span element</h1>
+    <span class="boxSpan">Span</span><span class="boxSpan">Span</span>
+</body>
+</html>

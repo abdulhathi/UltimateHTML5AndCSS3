@@ -1,0 +1,28 @@
+<!-- 
+    Three type of the way we can provide the CSS
+    1. Embedded css (Style element to have the CSS in the html page itself)
+    2. External CSS file (Create a sperate css file to spcify the styles and link in to the html page)
+    3. Inline style (Using style attribute provide the line style for each element)
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- 1. Embedded css -->
+    <style>
+        .embeddedStyle {
+            color: brown;
+        }
+    </style>
+ </head>
+ <body>
+    <h1 class="embeddedStyle">Embedded style</h1>
+    <h1 class="externalCSSStyle">External style</h1>
+    <h1 style="color:darkmagenta;">Inline css style</h1>
+ </body>
+ </html>

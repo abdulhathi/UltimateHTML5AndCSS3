@@ -1,0 +1,92 @@
+<!-- 
+    Three Types of Positioning
+    1. Relative - (Position the eleemnt it relative)
+    2. Absolute - Postion the element it's parent container relative
+    3. Fixed - Position the element it's 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Positioning</title>
+    <style>
+        body {
+            height: 200vh;
+        }
+        .boxContainer {
+            border: 5px solid gray;
+            width: 300px;
+            float: left;
+        }
+        .box {
+            width: 200px;
+            height: 200px;
+        }
+        .box1 {
+            background-color: gold;
+        }
+        .box2 {
+            background-color: orange;
+            position: relative;
+            top: 4rem;
+            left: 4rem;
+        }
+        .box3 {
+            background-color: dodgerblue;
+        }
+
+        .boxContainer1 {
+            border: 5px solid gray;
+            width: 500px;
+            float: left;
+            position: relative;
+        }
+        .box4 {
+            background-color: cadetblue;
+        }
+        .box5 {
+            background-color:darkmagenta;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+        .box6 {
+            background-color:darksalmon;
+        }
+        .boxContainer2 {
+            border: 5px solid gray;
+            width: 500px;
+            float: left;
+        }
+        .box7 {
+            background-color: hotpink;
+            position: fixed;
+            top: 0;
+            left: 2rem;
+            right: 2rem;
+            width: auto;
+            height: 3rem;
+        }
+        h4 {
+            text-align: center;
+        }
+    </style>
+</head> 
+<body>
+    <div class="boxContainer">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+    </div>
+    <div class="boxContainer1">
+        <div class="box box4"></div>
+        <div class="box box5"></div>
+        <div class="box box6"></div>
+    </div>
+    <div class="boxContainer2">
+        <div class="box box7"><h4>Menu bar</h4></div>
+    </div>
+</body>
+</html>

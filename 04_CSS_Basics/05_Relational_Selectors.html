@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics - Relational selectors</title>
+    <style>
+        /* Style the specific Paragraph type element inside the id #article1 */
+        section {
+            font-size: xx-large;
+        }
+        #article1 p {
+            color: gold;
+        }
+
+        #article1 > p {
+            color: rgb(0, 60, 255);
+        }
+
+        #section1 + h1 {
+            background-color: rgb(21, 0, 139);
+            color: white;
+        }
+
+        #section1 ~ p {
+            background-color: darkcyan;
+        }
+    </style>
+
+</head>
+<body>
+    <section id="section1">
+        <h1>Style the specific Paragraph type element inside the id #article1 </h1>
+        <article id="article1">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos porro nesciunt illum facilis eligendi provident libero, eaque, quo quasi eum eius a atque molestias enim, tenetur aspernatur praesentium vitae numquam.
+            <p>paragraph1</p>
+            <article>
+                <p>paragraph2</p>
+            </article>
+        </article>
+    </section>
+    <h1>Style the specific Paragraph type element below the id #section1 </h1>
+    <p>paragraph1</p>
+    <p>paragraph2</p>
+</body>
+</html>

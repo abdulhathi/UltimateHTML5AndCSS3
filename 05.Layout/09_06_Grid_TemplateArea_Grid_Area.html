@@ -1,0 +1,46 @@
+<!-- 
+    grid-template-area
+    grid-area
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            row-gap: 10px;
+            column-gap: 10px;
+            grid-template: 100px auto 100px / 30fr 80fr;
+            grid-template-areas: 
+                    "header header" 
+                    "menu   main" 
+                    ".      footer";
+            border: 3px solid lightgray;
+            height: 100vh;
+        }
+        .box {
+            /* width: 5rem; */
+            /* height: 5rem; */
+            background-color: gold;
+        }
+        .box-one {
+            grid-area: header;
+        }
+        .box-four {
+            grid-area: footer;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="box box-one">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box box-four">D</div>
+    </div>
+ </body>
+ </html>

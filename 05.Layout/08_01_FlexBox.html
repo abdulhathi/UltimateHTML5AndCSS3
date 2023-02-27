@@ -1,0 +1,54 @@
+<!-- 
+    1. display: flex property is helps to align the elements inside the cointainer using flexbox layout method
+    2. flow-direction: row (or) column flow child elements in the direction of row wise or column wise
+    3.  flow-direction: row                flow-direction: column
+        --------------------------------------------------------------------
+        justify-content (x-axis or main)    justify-content (y-axis or main)
+        align-items (y-axis or cross)       align-items (x-axis or cross)
+    4. flex-wraps is used to wrap the container child elements
+    5. align-content is used to align the multi row items from the container
+    6. align-self is used to align the flex container self element.
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - FlexBox</title>
+    <style>
+        .flexContainer {
+            border: 1px solid blueviolet;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            border-radius: 10px;
+            flex-wrap: wrap;
+            align-content: flex-start;
+            height: 100vh;
+        }
+        .box {
+            width: 10rem;
+            height: 10rem;
+            background-color: gold;
+            margin: 1rem;
+            text-align: center;
+            border-radius: 10px;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="flexContainer">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+    </div>
+ </body>
+ </html>

@@ -1,0 +1,53 @@
+<!-- 
+    1. Show header of the table useing <thead> <th>
+    2. Show the body rows using <tbody> <td>
+    3. Show the footer rows using <tfoot> <th>
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics - Tables</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+        tfoot {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Expense</th>
+            </tr>
+            <tr>
+                <th>Items</th>
+                <th>Spent</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>House rent</td>
+                <td>2300</td>
+            </tr>
+            <tr>
+                <td>Grocerry</td>
+                <td>500</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total</th>
+                <th>2800</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

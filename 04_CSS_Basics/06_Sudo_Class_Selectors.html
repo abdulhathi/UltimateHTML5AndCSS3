@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics - Sudo class selectors</title>
+    <style>
+        /* Each first element type will get styled using this sudo class selectors under this article */
+        article :first-of-type {
+            color: coral;
+            font-size: larger;
+        }
+        article h1:first-child {
+            color: darkgreen;
+            font-size: 20px;
+        }
+        a:visited, a:link {
+            font-weight: bolder;
+            color: darkred;
+        }
+        a:hover, a:focus {
+            font-weight: bolder;
+            color: deeppink;
+        }
+        ul {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        ul li:nth-child(odd) {
+            color:darkorchid;
+        }
+        ul li:nth-child(even) {
+            color:darkcyan;
+            font-style: italic;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <article>
+        <h1>Each first element type will get styled using this sudo class selectors under this article</h1>
+        <p>paragraph 1
+            <h1>header 1</h1>
+            <h1>header 2</h1>
+        </p>
+        <p>paragraph 2
+            <h1>header 1</h1>
+            <h1>header 2</h1>
+        </p>
+        <p>paragraph 3
+            <h1>header 1</h1>
+            <h1>header 2</h1>
+        </p>
+        <span>span</span>
+    </article>
+    <article>
+        <h1>First child sudo class</h1>
+        <h1>header1</h1>
+        <h1>header1</h1>
+        <h1>header1</h1>
+    </article>
+    <a href="http://www.th.com"> Anchor tag href sudo class</a>
+
+    <h3>Nth - element selector</h3>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+        <li>item 4</li>
+        <li>item 5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics - Gradient colors</title>
+    <style>
+        /* Top to bottom linear gradient */
+        .box {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(green,blue);
+        }
+        /* Left to right linear gradient */
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(to right, red,blue);
+        }
+        .box3 {
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(45deg, dodgerblue,yellow);
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Top to bottom linear gradient color
+        <div class="box"></div>
+    </p>
+    <p>
+        Left to right linear gradient color
+        <div class="box2"></div>
+    </p>
+    <p>
+        45 degree direction linear gradient color
+        <div class="box3"></div>
+    </p>
+</body>
+</html>

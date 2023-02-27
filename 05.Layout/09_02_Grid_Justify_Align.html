@@ -1,0 +1,45 @@
+<!-- 
+    Grid layout aligning items
+    justify-items   (horizontal axis align the grid items)
+    align-items     (vertical axis align the grid items)
+    justify-content (horizontal axis align grid layout)
+    align-content   (vertical axis align grid layout)
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-rows: repeat(3, 100px); */
+            /* grid-template-columns: repeat(2, 100px); */
+            grid-template: repeat(3, 100px) / repeat(3, 100px);
+            border: 3px solid lightgray;
+            justify-items: center;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            height: 100vh;
+        }
+        .box {
+            width: 5rem;
+            height: 5rem;
+            background-color: gold;
+        }
+        justify-content: stretch;
+            align-items: stretch;
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+    </div>
+ </body>
+ </html>

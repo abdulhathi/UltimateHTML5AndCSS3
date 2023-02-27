@@ -1,0 +1,44 @@
+<!-- 
+    1. Flex basis - set the width of the element
+    2. Flex grow - grow the flex box when the browser window grow
+    3. Flex shrink - shrink the flex box when browser window shrinks
+    4. Flex
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Flex basis, flex grow, flex shrink and flex</title>
+    <style>
+        .container {
+            border: 5px solid gray;
+            height: 100vh;
+            display: flex;
+        }
+        .box {
+            flex-basis: 20rem;
+            flex-grow: 1;
+            flex-shrink: 0;
+            width: 10rem;
+            height: 10rem;
+            background-color: dodgerblue;
+            margin: 1rem;
+            text-align: center;
+            border-radius: 10px;
+        }
+        .box-one {
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box-one">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+    </div>
+</body>
+</html>

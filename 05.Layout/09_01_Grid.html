@@ -1,0 +1,36 @@
+<!-- 
+    Display grid layout
+    grid-template-rows
+    grid-template-columns
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout - Grid Layout</title>
+    <style>
+        .container {
+            display: grid;
+            /* grid-template-rows: repeat(3, 100px); */
+            /* grid-template-columns: repeat(2, 100px); */
+            grid-template: repeat(3, 100px) / repeat(3, 100px);
+            border: 3px solid lightgray;
+        }
+        .box {
+            width: 5rem;
+            height: 5rem;
+            background-color: gold;
+        }
+    </style>
+ </head>
+ <body>
+    <div class="container">
+        <div class="box">A</div>
+        <div class="box">B</div>
+        <div class="box">C</div>
+        <div class="box">D</div>
+    </div>
+ </body>
+ </html>
