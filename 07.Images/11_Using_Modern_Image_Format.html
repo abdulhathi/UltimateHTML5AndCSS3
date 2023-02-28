@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images - 11_Using_Modern_Image_Format</title>
+    <style>
+        img {
+            /* width: 350px; */
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Using Modern Image Format</h1>
+    <!-- Picture element for browser not supporting -->
+    <picture>
+        <source type="image/webp" srcset="images/meal.webp">
+        <source type="image/jpg" srcset="images/meal.jpg">
+        <img>
+    </picture>
+    <!-- <img src="images/meal.jpg" alt="JPEG"> -->
+    <!-- <img src="images/meal.webp" alt="WEBP"> -->
+</body>
+</html>
