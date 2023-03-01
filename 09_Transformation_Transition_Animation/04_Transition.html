@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transformations</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            flex-direction: column;
+            row-gap: 5px;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: black;
+        }
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: gold;
+            transition: transform 0.5s, background-color 0.5s;
+        }
+        .boxRotate:hover {
+            transform: perspective(200px) rotate(45deg);
+            background-color: orangered;
+        }
+        .boxScale:hover {
+            transform:perspective(200px) scaleX(2);
+        }
+        .boxSkew:hover {
+            transform: perspective(200px) skewX(45deg);
+        }
+        .boxTranslate:hover {
+            transform: perspective(200px) translateZ(-50px);
+        }
+        
+        h1 {
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <h1>rotate()</h1>
+    <div class="box boxRotate">Lorem ipsum dolor sit amet consectetur.</div>
+    <h1>scale()</h1>
+    <div class="box boxScale">Lorem ipsum dolor sit amet consectetur.</div>
+    <h1>skew()</h1>
+    <div class="box boxSkew">Lorem ipsum dolor sit amet consectetur.</div>
+    <h1>translate()</h1>
+    <div class="box boxTranslate">Lorem ipsum dolor sit amet consectetur.</div>
+</body>
+</html>

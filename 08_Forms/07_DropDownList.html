@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Drop down list</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+</head>
+<body>
+    <h3>Single item select Drop down</h3>
+    <select name="singleSelectDropDown" id="">
+        <option value="">Select an item...</option>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">Javascript</option>
+    </select>
+    <h3>Single item select Drop down with default value</h3>
+    <select name="singleSelectDropDown" id="">
+        <option value="">Select an item...</option>
+        <option value="1" selected>HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">Javascript</option>
+    </select>
+    <h3>Multiple items select Drop down</h3>
+    <select name="multipleSelectDropDown" id="" multiple>
+        <option value="1">HTML</option>
+        <option value="2">CSS</option>
+        <option value="3">Javascript</option>
+    </select>
+
+    <h3>Single select Drop down with Group of items</h3>
+    <select name="singleSelectDropDown" id="">
+        <option value="">Select an item...</option>
+        <optgroup label="Front end courses">
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">Javascript</option>
+        </optgroup>
+        <optgroup label="Back end courses">
+            <option value="1">Node.JS</option>
+            <option value="2">ASP.net</option>
+            <option value="3">Django</option>
+        </optgroup>
+    </select>
+</body>
+</html>

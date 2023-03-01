@@ -4,18 +4,69 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/normalize.css">
     <title>Image - Excersise</title>
     <style>
+        html {
+            font-family: 'Poppins', sans-serif;
+        }
+        body {
+            
+        }
+        .space {
+            background: url(images/hubble_Space/hubble_Space_320.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 100vh;
+            padding: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        h1 {
+            color: white;
+            font-weight: 900;
+            text-transform: uppercase;
+            word-spacing: 1rem;
+        }
+        span {
+            color: white;
+            font-weight: 300;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 10px;
+        }
         
+        @media screen and (min-width: 912px) {
+            .space {
+                background: url(images/hubble_Space/hubble_Space_912.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        @media screen and (min-width: 1351px) {
+            .space {
+                background: url(images/hubble_Space/hubble_Space_1351.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        @media screen and (min-width: 1400px) {
+            .space {
+                background: url(images/hubble_Space/hubble_Space_1400.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
     </style>
 </head>
 <body>
-    <picture>
-        <source media="(max-width: 320px)" srcset="images/hubble_Space/hubble_Space_320.jpg">
-        <source media="(max-width: 853px)" srcset="images/hubble_Space/hubble_Space_912.jpg">
-        <source media="(max-width: 1228px)" srcset="images/hubble_Space/hubble_Space_1351.jpg">
-        <source media="(max-width: 1440px)" srcset="images/hubble_Space/hubble_Space_1400.jpg">
-        <img src="images/hubble_Space/hubble_Space_1400.jpg" alt="">
-    </picture>
+    <section class="space">
+        <h1>Hubble Space Telescope</h1>
+        <span>30 Years of Discovery</span>
+    </section>
 </body>
 </html>
