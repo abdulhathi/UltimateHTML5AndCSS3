@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Basics - Sudo Element selectors</title>
     <style>
-        .first-Letter {
-            font-size: 50px;
-        }
-        p::first-letter {
-            font-size: 50px;
-            color: blueviolet;
-        }
-        article::first-line {
-            font-weight: bold;
-        }
-        ::selection {
-            font-size: xx-large;
-            color: rgb(219, 12, 12);
-            font-style: italic;
-        }
-        p::after {
-            content: "Back to top";
-            display: block;
-        }
+      .first-Letter {
+        font-size: 50px;
+      }
+      p::first-letter {
+        font-size: 50px;
+        color: blueviolet;
+      }
+      article::first-line {
+        font-weight: bold;
+      }
+      ::selection {
+        font-size: xx-large;
+        color: rgb(219, 12, 12);
+        font-style: italic;
+      }
+      p::after {
+        content: 'Back to top';
+        display: block;
+      }
     </style>
-</head>
-<body>
-    <p><span class="first-Letter">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi architecto mollitia alias ad tempora quia laborum consequuntur illo ipsam, vitae ea obcaecati distinctio recusandae error explicabo facere qui esse totam doloremque sed. </p>
-    <p><span class="first-Letter">L</span>orem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos sequi architecto mollitia alias ad tempora quia laborum consequuntur illo ipsam, vitae ea obcaecati distinctio recusandae error explicabo facere qui esse totam doloremque sed.</p>
+  </head>
+  <body>
+    <p>
+      <span class="first-Letter">L</span>orem ipsum dolor sit amet consectetur adipisicing elit.
+      Dignissimos sequi architecto mollitia alias ad tempora quia laborum consequuntur illo ipsam,
+      vitae ea obcaecati distinctio recusandae error explicabo facere qui esse totam doloremque sed.
+    </p>
+    <p>
+      <span class="first-Letter">L</span>orem ipsum dolor sit amet consectetur adipisicing elit.
+      Dignissimos sequi architecto mollitia alias ad tempora quia laborum consequuntur illo ipsam,
+      vitae ea obcaecati distinctio recusandae error explicabo facere qui esse totam doloremque sed.
+    </p>
     <article>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi quis laboriosam porro facilis, officiis voluptatem commodi atque, perferendis dolore ex deserunt est odio dicta ea assumenda reiciendis optio autem at numquam laborum harum temporibus quasi error.
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus excepturi quis laboriosam
+      porro facilis, officiis voluptatem commodi atque, perferendis dolore ex deserunt est odio
+      dicta ea assumenda reiciendis optio autem at numquam laborum harum temporibus quasi error.
     </article>
     <ul>
-        <li></li>
-        <li></li>
+      <li></li>
+      <li></li>
     </ul>
-</body>
+  </body>
 </html>
